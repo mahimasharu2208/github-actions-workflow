@@ -21,10 +21,10 @@ output "bucket_name" {
 
 import {
   to = aws_s3_bucket.test
-  id = "test-bucket-mahima"
+  id = "test-bucket-mahima-import"
 }
 
 resource "aws_s3_bucket" "test" {
-  bucket = "test-bucket-mahima"
+  bucket = "test-bucket-mahima-import"
 }
 
