@@ -20,7 +20,11 @@ output "bucket_name" {
 }
 
 import {
-  to = aws_s3_bucket.example
+  to = aws_s3_bucket.test
   id = "test-bucket-mahima"
+}
+
+resource "aws_s3_bucket" "test" {
+  bucket = "test-bucket-mahima"
 }
 
