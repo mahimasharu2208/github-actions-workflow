@@ -11,7 +11,7 @@ resource "random_string" "bucket_suffix" {
 
 # Create a private S3 bucket
 resource "aws_s3_bucket" "example" {
-  bucket = "my-bucket-${random_string.bucket_suffix.result}"
+  bucket = "my-unique-bucket-${random_string.bucket_suffix.result}"
 }
 
 # Output the bucket name
